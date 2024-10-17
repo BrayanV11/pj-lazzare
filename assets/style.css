@@ -1,0 +1,264 @@
+* {
+    box-sizing: border-box;
+}
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #adb5bd;
+}
+
+@font-face {
+    font-family: "GTProelium";
+    src: url(/assets/fonts/GTProelium.otf);
+}
+
+.header-content {
+    background-color: #fdb44b;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+#header-area {
+    font-family: "GTProelium";
+    display: flex;
+    justify-content: space-between;
+    width: 58vw;
+    height: 7vh;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-logo h2 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+#header-navigation-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+#header-navigation-area ul {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+#header-navigation-area li {
+    margin-right: 20px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#header-navigation-area a:hover {
+    color: #023e8a;
+    transition: 400ms ease-in-out;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+.news-area {
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.news-area-content {
+    width: 58vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.news-title-intro {
+    display: flex;
+    align-items: center;
+    font-size: 1.3em;
+    
+}
+
+.news-title-intro img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+}
+
+
+.news-title-intro h1 { 
+    padding: 8px;
+    text-decoration: underline;
+    padding: 10px;
+    font-family: "Montserrat";
+}
+.title-news {
+    background-color: #8d99ae;
+    border-radius: 5px;
+    border: 2px solid black;
+    min-width: 350px;
+    flex: 1;
+    margin: 5px;
+    transition: 600ms ease-in-out;
+    font-family: "Montserrat";
+}
+
+.title-news:hover {
+    transform: scale(101%);
+    background-color: #dee2e6;
+    box-shadow: 0px 0px 10px #dee2e6;
+}
+
+.title-news h2 {
+    text-align: center;
+    margin: 8px;
+}
+
+.title-news p {
+    padding: 11px;
+    margin: 3px;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+article {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.news-mundial-area {
+    width: 58vw;
+}
+
+.news-mundial-logo-title {
+    display: flex;
+    width: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.news-mundial-logo-title h1 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    font-family: "Montserrat";
+}
+
+.news-mundial-logo-title img {
+    padding: 8px;
+    width: 58px;
+}
+
+.news-content {
+    border-bottom: 3px solid white;
+    font-family: "Montserrat";
+}
+
+.news-content:last-child {
+    border-bottom: none;
+}
+
+.news-content h5 {
+    font-size: 1.2em;
+}
+
+.news-content p {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.about-area {
+    background-color: #fdb44b;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat";
+    border-top: 3px solid #dee2e6;
+}
+
+.about-content {
+    width: 58vw;
+    display: flex;
+    align-items: center;
+}
+
+.about-content-text {
+    width: 60%;
+}
+
+.button-acess {
+    width: 39%;
+    display: flex;
+    justify-content: center;
+}
+
+.button-acess button {
+    width: 30%;
+    border-radius: 13px;
+    font-weight: 700;
+}
+
+@media (max-width: 540px) {
+
+    .header-logo {
+        display: none;
+    }
+
+    #header-area {
+        width: auto;
+    }
+    #header-navigation-area li {
+        margin: 4px;
+        width: 100%;
+    }
+
+    .news-mundial-area {
+        width: 90%;
+    }
+
+    .about-content {
+        width: 90%;
+    }
+
+    .button-acess button {
+        width: auto;
+    }
+}
